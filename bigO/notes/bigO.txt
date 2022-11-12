@@ -1,0 +1,4 @@
+Big O - Big O Asymptotic Analysis
+
+Big O notation is the language we use for talking about how long
+an algorithm takes to run
