@@ -64,3 +64,22 @@ const logAllPairOfArray = (arr) => {
     }
 }
 console.log(logAllPairOfArray([1,2,3,4,5])); // O(n * n) === O(n^2) o of n squared, o of n to the power of 2
+
+const hoge = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        console.log("hoge hoge");
+    }
+}
+
+console.log(hoge([1,2,3,4,5])) // O(1)
+
+const sayHiNTimes = (n) => {
+    let his = [];
+    for (let i = 0; i < n; i++) {
+        his[i] = "Hi!"
+    }
+    return his;
+}
+console.log(sayHiNTimes(5));
+
+

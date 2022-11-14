@@ -11,3 +11,4 @@ BIG O Rules:
 1. Worst Case - we alwqys think about the worst case, like the item might be placed at the very end of an array
 2. Remove Constants - What we care is how steep the line is, but how the line moves as inputs increase e.g. (3n + 100) => (n)
 3. Different terms for inputs - Different inputs different variables
+4. Drop non dominants - only keep the most dominant / significant part

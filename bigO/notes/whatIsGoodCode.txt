@@ -1,0 +1,18 @@
+What is good code?
+
+1. Readable
+2. Scalable
+    - Speed - How fast is the runtime on the code? How much time does it take for a function to run? How many operations does it cost?
+    - Memory - memory required by the algorithm
+
+Two ways to remember when a program executes
+    - Heap => Usually where we store variables that we assign values to
+    - Stack => Usually where we keep track of our function calls.
+
+
+Sometimes readability may be matters more than scalability.
+Sometimes optimizing for time or space can negatively impact the readability of code
+
+
+Quote
+Premature optimization can be the root of all evil
