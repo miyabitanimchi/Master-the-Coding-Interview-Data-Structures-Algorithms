@@ -1,0 +1,5 @@
+Data structure - Collection of values
+Algorithms - Steps or processes we put into place to manipulate the collection of values
+
+How to build data structure?
+How to use it?
