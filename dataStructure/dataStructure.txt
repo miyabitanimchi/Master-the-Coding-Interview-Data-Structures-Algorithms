@@ -3,3 +3,23 @@ Algorithms - Steps or processes we put into place to manipulate the collection o
 
 How to build data structure?
 How to use it?
+
+How computers store data
+- Variables and numbers are stored in what we call random access memory, RAM for short
+- Processor => CPU
+- There are "addresses" (like shelves) to hold information in RAM
+- Each shelve holds 8 bits
+- 8bits is called 1 byte
+- Data structure remmembers ways for us to store information
+- Cache memory - work between CPU and RAM
+- CPU is connected to a "memory controller" and it reads and writes data in the memor
+- Memory controller has connection to each shelves
+
+Operations on data structures
+- Insertion
+- Deletion
+- Traversal
+- Access
+- Searching
+- Sorting
+
