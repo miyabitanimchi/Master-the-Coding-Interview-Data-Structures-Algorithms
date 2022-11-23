@@ -1,1 +1,11 @@
 - arrays... sometimes called lists
+
+- Lookup O(1)
+- Push O(1)
+- Insert O(n)
+- Delete O(n)
+- Append O(1) ... can be O(n)
+
+Arrays has two types, Dynamic Arrays and Static Arrays
+
+- Static Arrays: The number of shelves is fixed beforehand
