@@ -1,5 +1,12 @@
 Hash Tables... aka hash maps, maps, Unordered maps, Dictionaries, objects
-
 Objects in JavaScript are a type of hash table.
+Hash tables are called diffently in defferent languages (e.g. Python... Dictionaries)
 
 A way hash tables work with is keys used an an indices.
+
+Idempotent... 冪等元（べきとうげん）??
+
+Every time you add a propety and value into a memory, hash function gets executed
+to where to store the data
+
+Difference between SHA-256 and MD5?
