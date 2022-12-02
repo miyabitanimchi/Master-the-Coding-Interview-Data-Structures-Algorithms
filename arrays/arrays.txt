@@ -9,3 +9,16 @@
 Arrays has two types, Dynamic Arrays and Static Arrays
 
 - Static Arrays: The number of shelves is fixed beforehand
+- Dynamic Arrays: The number of shelves is not defined. JavaScript has dynamic arrays
+
+When do you want to use arrays?
+
+Pros:
+- Fast lookups
+- Fast push/pop
+- Ordered
+
+Cons:
+- Slow inserts
+- Slow deletes
+- Fixed size... if using static array
