@@ -1,0 +1,5 @@
+Hash Tables... aka hash maps, maps, Unordered maps, Dictionaries, objects
+
+Objects in JavaScript are a type of hash table.
+
+A way hash tables work with is keys used an an indices.
