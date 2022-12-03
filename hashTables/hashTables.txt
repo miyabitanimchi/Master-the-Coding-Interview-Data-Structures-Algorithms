@@ -10,3 +10,22 @@ Every time you add a propety and value into a memory, hash function gets execute
 to where to store the data
 
 Difference between SHA-256 and MD5?
+
+
+
+Problems of Hash Tables... COLLISION
+Hash function doesn't evenly distribute the data until every addres is full, 
+it ramdomly assigns a space and memory and put the data in there.
+Collision is inevitable in hash tables with enough data and limited memory.
+
+When collision is happening, it'll be 
+O(n/k)
+k is the size of the hash table
+
+
+There are 2 ways to handle with collisions
+- Linked List
+- 
+
+
+
