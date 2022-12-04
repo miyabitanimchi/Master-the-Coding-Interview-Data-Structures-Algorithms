@@ -23,9 +23,21 @@ O(n/k)
 k is the size of the hash table
 
 
-There are 2 ways to handle with collisions
+There are ways to handle with collisions
 - Linked List
-- 
+-
 
 
 
+Diffrence between Map and Object?
+
+- Map: 
+   *  Map allows us to save ANY DATA TYPE as the key
+   * It maintains insertion order
+- Object:
+    * It only saves the key as a STRING
+
+
+
+What is Set??
+* Similar to Map, but it ONLY stores the key, not the value
