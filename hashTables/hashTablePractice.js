@@ -3,6 +3,7 @@ class HashTable {
         this.data = new Array(size);
     }
 
+    // underscore means it's private in JS world... but we can still access it!
     _hash(key) {
         let hash = 0;
         for (let i = 0; i < key.length; i++) {
@@ -22,10 +23,11 @@ class HashTable {
     }
 
     get(key) {
-        
+
     }
 }
 
 const myHashTable = new HashTable(50);
 myHashTable.set('grass', 10000);
 myHashTable.get('grass');
+console.log(myHashTable);
