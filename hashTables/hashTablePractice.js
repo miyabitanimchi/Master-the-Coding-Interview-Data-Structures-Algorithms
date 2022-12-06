@@ -44,11 +44,24 @@ class HashTable {
         }
         return undefined;
     }
+
+    // for this type of method, using objects, hash tables are not the best idea.
+    keys() {
+        const keysArray = [];
+        for (let i = 0; i < this.data.length; i++) {
+            if (this.data[i]) {
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+        return keysArray;
+    }
 }
 
 const myHashTable = new HashTable(50);
 myHashTable.set('grapes', 10000);
-// myHashTable.set('apples', 10);
+myHashTable.set('apples', 10);
+myHashTable.set('pears', 200);
 // myHashTable.get('grapes');
 console.log(myHashTable.data);
 console.log(myHashTable.get('grapes'));
+console.log(myHashTable.keys());
