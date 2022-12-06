@@ -41,3 +41,31 @@ Diffrence between Map and Object?
 
 What is Set??
 * Similar to Map, but it ONLY stores the key, not the value
+
+
+Why hash tables?
+Hash tables works great and fast when we want quick access to certain values.
+
+
+
+Array vs Hash Tables
+
+        A        HS
+search: O(n)     O(1)
+lookup: O(1)     O(1)
+push:   O(1)     
+insert: O(n)     O(1)
+delete: O(n)     O(1)
+
+- Search
+    - Array: takes long time since we need to loop through a whole Array
+    - HS: Fast, we just grab the key
+- Insert
+    - Array: needs to shift
+    - Fast, simply hash and create the key, (might be collisions there)
+- lookup
+    - Array: fast, grab the index
+    - HS: fast, use the key
+- Order
+    - Array: it keeps the order (each item is placed next to each other on a shelf in memory)
+    - NO concept of order (kind of placed all over the place)
