@@ -1,0 +1,14 @@
+=== What is a Linked List? ===
+- A list that is Linked
+- Contains a set of nodes and think of nodes as these blocks
+- The nodes have two elements
+    - A value of data
+    - A pointer to the next node in line
+- The first node is called the head
+- The last node is called the tail
+- There is what people call "null terminated", the tail always points to null
+
+
+there are 2 types:
+- Singly Linked Lists
+- Doubly Linked Lists
