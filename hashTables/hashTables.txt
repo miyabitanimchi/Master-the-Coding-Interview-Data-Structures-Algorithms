@@ -69,3 +69,4 @@ delete: O(n)     O(1)
 - Order
     - Array: it keeps the order (each item is placed next to each other on a shelf in memory)
     - NO concept of order (kind of placed all over the place)
+    * Python Ditionaries... it's ordered by default! 
