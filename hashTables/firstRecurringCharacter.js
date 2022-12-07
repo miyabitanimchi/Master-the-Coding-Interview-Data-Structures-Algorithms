@@ -11,22 +11,7 @@
 
 
 
-// const firstRecurringCharacter = (arr) => {
-//     const arrSet = new Set();
-
-//     for (let i = 0; i < arr.length; i++) {
-//         arrSet.add(arr[i]);
-//     }
-
-//     for (let j = 0; j < arr.length; j++) {
-//         if (arrSet.has(arr[j])) {
-//             return arr[j];
-//         }
-//     }
-
-//     return undefined;
-// }
-
+// my solution
 const firstRecurringCharacter2 = (arr) => {
     const arrSet = {};
     let count = 0;
@@ -43,11 +28,39 @@ const firstRecurringCharacter2 = (arr) => {
         }
         count++
     }
-
-
     return undefined;
 }
 
 console.log(firstRecurringCharacter2([2,4,5,6,7,5,9]));
 console.log(firstRecurringCharacter2([1,2,3,4,5,6,7,7]));
 console.log(firstRecurringCharacter2([1,2,1,3,10,5,3]));
+console.log(firstRecurringCharacter2([5,6,7,8]));
+console.log(firstRecurringCharacter2([2,5,5,2.1,8,0]));
+
+
+
+
+// naive way... don't do this. this is O(n^2) (O of squared)
+// (but for this space complexity is O(1))
+const firstRecurringCharacterNaiveway = (arr) => {
+    for (let i = 0; i < arr.length; arr++) {
+        for (let j = i + 0; j < arr.length; arr++) {
+            if (arr[i] === arr[j]) return arr[i];
+        }
+    }
+    return undefined;
+}
+
+
+
+// solution by andrei
+const firstRecurringCharacterByAndrei = (arr) => {
+    let map = {}
+    for (let i = 0; i < arr.length; i++) {
+        // if there is already the key, it means it's the first recurring item
+        if (map[arr[i]] !== undefined) return arr[i];
+        map[arr[i]] = i; // this time the value can be anything
+    }
+    return undefined;
+} // O(n) because of the space complexity of the map, but still it's way faster than nesting loops
+console.log(firstRecurringCharacterByAndrei([2,5,5,2.1,8,0]));
