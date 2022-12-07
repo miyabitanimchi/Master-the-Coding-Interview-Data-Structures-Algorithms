@@ -12,3 +12,12 @@
 there are 2 types:
 - Singly Linked Lists
 - Doubly Linked Lists
+
+
+
+
+=== Why Linked Lists could be better than Hash Tables in some occasions? ===
+- My thought
+    - We can keep the order
+    - Because of the pointer, somehow we can grab the value we want easily?
+    - Unlike arrays, we don't need to shift values when a new value is inserted
