@@ -16,8 +16,32 @@ there are 2 types:
 
 
 
-=== Why Linked Lists could be better than Hash Tables in some occasions? ===
+=== Why Linked Lists? ===
 - My thought
     - We can keep the order
     - Because of the pointer, somehow we can grab the value we want easily?
     - Unlike arrays, we don't need to shift values when a new value is inserted
+
+- Answers
+    - When you look up or inserting an item let's say at the 5th place, if linked lists we start
+      at the head and traverse the list until we get there (O(n))
+      * Traverse... 横切る、横断する、（山などを）越える
+      the idea is the same as we iterate through an array from an index 0 to n
+    - linked lists and nodes are scattered all over the computer memory, like hash tables.
+      But inserting an items in the middle of a linked list is a lot better than an array 
+
+
+
+=== Big O og Linked Lists ===
+- Prepend: O(1)
+- Append: O(1)
+- Lookup: O(n)
+- Insert: O(n)
+- Delete: O(n)
+
+
+
+
+=== Misc notes ===
+- We'll use a while loop when coding with linked lists
+    
