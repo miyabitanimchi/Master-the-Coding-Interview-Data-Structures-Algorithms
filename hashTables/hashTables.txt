@@ -69,4 +69,20 @@ delete: O(n)     O(1)
 - Order
     - Array: it keeps the order (each item is placed next to each other on a shelf in memory)
     - NO concept of order (kind of placed all over the place)
-    * Python Ditionaries... it's ordered by default! 
+    * Python Ditionaries... it's ordered by default!
+
+
+
+
+Hash Tables Pros and Cons
+
+- Pros
+    - Fast lookups *
+    - Fast inserts
+    - Flexible keys ... if it's an array it's only the indices
+- Cons
+    - Unordered
+    - Slow key iteration ... if you need to output all the keys, then need to map through all the memory spaces
+
+* Good collision solution needed... but usually don't need to worry about too much
+  since a language and computer can take care of it for us

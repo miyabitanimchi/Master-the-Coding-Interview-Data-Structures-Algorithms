@@ -62,5 +62,7 @@ const firstRecurringCharacterByAndrei = (arr) => {
         map[arr[i]] = i; // this time the value can be anything
     }
     return undefined;
-} // O(n) because of the space complexity of the map, but still it's way faster than nesting loops
+}
+// O(n) because of the space complexity of the map, but still it's way faster than nesting loops
+// fast access O(1), tradeoff: more memory O(n)
 console.log(firstRecurringCharacterByAndrei([2,5,5,2.1,8,0]));
