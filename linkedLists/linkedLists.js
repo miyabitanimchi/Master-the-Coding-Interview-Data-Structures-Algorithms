@@ -37,15 +37,29 @@ class LinkedList {
     return this; // this just references what this classe is that gets instantiated
   }
 
+  // my solution
+  // prepend(value) {
+  //   const newNode = {
+  //     value,
+  //     next: this.head
+  //   }
+  //   this.head = newNode;
+  //   this.length++;
+  //   return this;
+  // }
+
+  // Andrei's solution
   prepend(value) {
     const newNode = {
       value,
-      next: this.head
+      next: null // null here
     }
+    newNode.next = this.head; // assign this.head here
     this.head = newNode;
     this.length++;
     return this;
   }
+
 }
 
 const myLinkedList = new LinkedList(10);
