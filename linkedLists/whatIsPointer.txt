@@ -1,0 +1,23 @@
+What is a pointer?
+- Reference to another place in memory, another object or another node
+
+
+const obj1 = { a: true };
+let obj2 = obj1; <= a poiner, a reference to the obj1
+// both obj1 and obj2 point to the same location in memory
+
+obj1.a = false;
+console.log(obj1); => { a: false }
+console.log(obj2); => { a: false }
+
+delete obj1; // obj2 is not pointing to the memory space anymore?
+
+console.log(obj1) => reference error
+console.log(obj2) => { a: false } // it still points to the memory space even though obj1 is deleted;
+
+
+obj2 = "hello planet"; 
+// then nothing points to the memory space anymore so the data will be deleted automatically (it's called GARBAGE COLLECTION)
+// But if it's low level languages, we need to manage the memory manually
+
+
