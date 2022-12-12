@@ -121,23 +121,27 @@ class LinkedList {
     return this.printList;
   }
 
-  // my solution
+  // Andrei's and my solution
   remove(index) {
     if (index === 0) {
       this.head = this.head.next;
       this.length--;
       return this.printList();
     }
-    if (index > this.length) {
-      this.tail = null;
+    if (index >= this.length - 1) {
+      const leader = this.traverseToIndex(this.length - 2);
+      leader.next = null;
+      this.tail = leader;
       this.length--;
       return this.printList();
     }
+
     const leader = this.traverseToIndex(index - 1);
-    const removePointer = this.traverseToIndex(index);
+    // const removePointer = this.traverseToIndex(index);
+    const removePointer = leader.next;
     leader.next = removePointer.next;
     this.length--;
-    return this.printList;
+    return this.printList();
   }
 
   traverseToIndex(index) {
@@ -160,7 +164,7 @@ myLinkedList.insert(0, 333);
 myLinkedList.insert(6, 14);
 console.log(myLinkedList.printList());
 console.log(myLinkedList.length);
-myLinkedList.remove(5);
+myLinkedList.remove(6);
 // myLinkedList.insert(2, 99);
 console.log(myLinkedList.printList());
 console.log(myLinkedList.length);
