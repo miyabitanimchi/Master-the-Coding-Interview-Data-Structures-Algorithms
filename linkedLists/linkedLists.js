@@ -32,16 +32,16 @@ class LinkedList {
   }
 
   append(value) {
-    console.log(this.head); // { value: 10, next: null }
+    // console.log(this.head); // { value: 10, next: null }
     const newNode = {
       // { value: 5, next: null }
       value,
       next: null,
     };
     this.tail.next = newNode;
-    console.log(this.head); // { value: 10, next: { value: 5, next: null } }
+    // console.log(this.head); // { value: 10, next: { value: 5, next: null } }
     this.tail = newNode;
-    console.log(this.head); // { value: 10, next: { value: 5, next: null } }
+    // console.log(this.head); // { value: 10, next: { value: 5, next: null } }
     this.length++;
     return this; // this just references what this classe is that gets instantiated
   }
@@ -94,11 +94,28 @@ class LinkedList {
       return this.append(value);
     }
 
+    // let's say the linked list is like this [1,10,5,16,99] and insert(2,99)
     const newNode = new Node(value);
     const leader = this.traverseToIndex(index - 1);
-    const holdingPointer = leader.next;
+    const holdingPointer = leader.next; // { value: 5, next: { value: 16, next: { value: 99, next: null } } }
+    // console.log(holdingPointer);
+    // leader will point to newNode, and newNode will point to holdingPointer
+    // leader(10)  holdingPointer(5)
+    //         \   /
+    //      newNode(99)
+
+    // leader.next now will be newNode
+    // holdingPointer still keeps 5 in the variable
     leader.next = newNode;
+    // *   *
+    //  \
+    //   *
+
     newNode.next = holdingPointer;
+    // *   *
+    //  \ /
+    //   *
+
     this.length++;
     return this.printList;
   }
@@ -116,8 +133,9 @@ class LinkedList {
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
-// myLinkedList.append(16);
+myLinkedList.append(16);
 myLinkedList.prepend(1);
+myLinkedList.append(99);
 console.log(myLinkedList.printList());
-myLinkedList.insert(1, 100);
+myLinkedList.insert(2, 99);
 console.log(myLinkedList.printList());
