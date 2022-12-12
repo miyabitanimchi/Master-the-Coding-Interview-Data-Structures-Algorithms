@@ -91,7 +91,8 @@ class LinkedList {
       return this.printList();
     }
     if (index >= this.length) {
-      return this.append(value);
+      this.append(value);
+      return this.printList();
     }
 
     // let's say the linked list is like this [1,10,5,16,99] and insert(2,99)
@@ -120,6 +121,25 @@ class LinkedList {
     return this.printList;
   }
 
+  // my solution
+  remove(index) {
+    if (index === 0) {
+      this.head = this.head.next;
+      this.length--;
+      return this.printList();
+    }
+    if (index > this.length) {
+      this.tail = null;
+      this.length--;
+      return this.printList();
+    }
+    const leader = this.traverseToIndex(index - 1);
+    const removePointer = this.traverseToIndex(index);
+    leader.next = removePointer.next;
+    this.length--;
+    return this.printList;
+  }
+
   traverseToIndex(index) {
     let counter = 0;
     let currentNode = this.head;
@@ -136,6 +156,11 @@ myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.append(99);
+myLinkedList.insert(0, 333);
+myLinkedList.insert(6, 14);
 console.log(myLinkedList.printList());
-myLinkedList.insert(2, 99);
+console.log(myLinkedList.length);
+myLinkedList.remove(5);
+// myLinkedList.insert(2, 99);
 console.log(myLinkedList.printList());
+console.log(myLinkedList.length);
