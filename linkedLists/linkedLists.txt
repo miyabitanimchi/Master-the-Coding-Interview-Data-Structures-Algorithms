@@ -40,6 +40,13 @@ there are 2 types:
 - Delete: O(n)
 
 
+=== Doubly Linked Lists ===
+- Doubly linked list allow us to traverse the list backwards
+- They also point to the previous node
+
+
+=== Downside of Doubly Linked Lists ===
+- It requires a little more memory
 
 
 === Misc notes ===
