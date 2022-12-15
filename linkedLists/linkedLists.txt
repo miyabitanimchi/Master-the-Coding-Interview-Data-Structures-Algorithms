@@ -49,6 +49,24 @@ there are 2 types:
 - It requires a little more memory
 
 
+=== Single vs Double? ===
+- Single
+  - Pros
+    - Simple implementation
+    - Requires less memory
+    - 
+  - Cons
+    - Can not be iterated in reverse or traverse from back to front
+
+- Double
+  - Pros
+    - Can be iterated in reverse or traverse from back to front
+    - Can access to the previous node easily
+  - Cons
+    - Complex implementation
+    - Requires more memory
+
+
 === Misc notes ===
 - We'll use a while loop when coding with linked lists
     
