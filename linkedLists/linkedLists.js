@@ -1,19 +1,4 @@
 // 10 => 5 => 16
-
-// Linked list looks something like this
-// let myLinkedList = {
-//   head: {
-//     value: 10,
-//     next: {
-//       value: 5,
-//       next: {
-//         value: 16,
-//         next: null // null terminated
-//       }
-//     }
-//   }
-// }
-
 class Node {
   constructor(value) {
     this.value = value;
@@ -153,18 +138,50 @@ class LinkedList {
     }
     return currentNode;
   }
+
+  reverse() { // if it's [1, 10, 5, 16]
+    if (!this.head.next) {
+      return this.head;
+    }
+    let first = this.head; // 1
+    console.log("first: " + first);
+    this.tail = this.head; // 1, but this.head.next still points to 10
+    console.log("this.tail: " + this.tail.next.value);
+
+    let second = first.next; // 10
+    console.log("second: " + second);
+
+    while(second) {
+      const temp = second.next; // 10
+      console.log("temp: " + temp);
+      second.next = first; // 5 => 1
+      console.log("second.next: " + second.next);
+      first = second; // 10
+      console.log("first in while loop: " + first);
+      second = temp; // 10?
+      console.log("second in while loop: " + second);
+
+    }
+    this.head.next = null;
+    this.head = first;
+    return this.printList();
+  }
 }
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
-myLinkedList.append(99);
-myLinkedList.insert(0, 333);
+// myLinkedList.append(99);
+// myLinkedList.insert(0, 333);
 myLinkedList.insert(6, 14);
-console.log(myLinkedList.printList());
-console.log(myLinkedList.length);
+// console.log(myLinkedList.length);
 myLinkedList.remove(6);
-// myLinkedList.insert(2, 99);
 console.log(myLinkedList.printList());
-console.log(myLinkedList.length);
+// myLinkedList.insert(2, 99);
+// console.log(myLinkedList.printList());
+// console.log(myLinkedList.length);
+myLinkedList.reverse();
+console.log(myLinkedList.printList());
+
+
