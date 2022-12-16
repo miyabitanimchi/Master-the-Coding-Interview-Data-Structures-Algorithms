@@ -9,10 +9,22 @@
 - Stacks are used in such as browser history
 - Methods
     - pop O(1)
-    - oush O(1)
+    - push O(1)
     - peek O(1) ... view the top plate
     - (loopup O(n)) ... it's gonna be a heavy operation!
 
+=== Queues ===
+- The opposite of stacks, called FIFO, first in, first out
+- Used in printers, waitlists, restaurant apps etc
+- Methods
+    - dequeue O(1) ...like shift
+    - enqueue O(1) ...like push
+    - peek O(1) ... view the first item
+    - (loopup O(n)) ... it's gonna be a heavy operation!
+
+=== Why we don't want to use arrays but stacks and queues? ===
+- Because it's inefficient!
+- if you shift or unshift item indexes needs to be shifted
+
 === MISC notes ===
 - Most programming languages are modeled with the stack architecture in mind
-- 
