@@ -1,0 +1,18 @@
+=== Stacks and Queues ===
+- They are both linear data structures, which allow us to traverse data sequentially one by one
+- They are similar, the main difference is only how items get removed
+
+=== Stacks ===
+- They are like plates stacked on top of each other vertically
+- Can only touch the top plate
+- Called LIFO, last in, first out, because the last plate comes out first
+- Stacks are used in such as browser history
+- Methods
+    - pop O(1)
+    - oush O(1)
+    - peek O(1) ... view the top plate
+    - (loopup O(n)) ... it's gonna be a heavy operation!
+
+=== MISC notes ===
+- Most programming languages are modeled with the stack architecture in mind
+- 
