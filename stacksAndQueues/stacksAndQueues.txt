@@ -26,5 +26,20 @@
 - Because it's inefficient!
 - if you shift or unshift item indexes needs to be shifted
 
+
+=== How you implement Stacks and Queues ===
+- Stacks
+    - Both Arrays and Linked List work well
+    - When accessing its items Arrays are faster vs Linked List because items are right next to each other
+    - Since stacks have dynamic arrays, so we can keep adding items to the List
+      Arrays have certain amount of memory, and when it reaches its limit it's going to have to double up that
+      memory and create new space for it somewhere in the memory
+- Queues
+    - Using arrays is not a good idea because indices needs to be shifted
+    - Use linked lists
+    
+
+
+
 === MISC notes ===
 - Most programming languages are modeled with the stack architecture in mind
