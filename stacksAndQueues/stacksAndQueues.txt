@@ -37,8 +37,15 @@
 - Queues
     - Using arrays is not a good idea because indices needs to be shifted
     - Use linked lists
-    
 
+
+=== Pros and Cons of Stacks and Queues ===
+    = Pros =
+        - Fast operations
+        - Fast peek
+        - Ordered
+    = Cons =
+        - Slow lookup
 
 
 === MISC notes ===
