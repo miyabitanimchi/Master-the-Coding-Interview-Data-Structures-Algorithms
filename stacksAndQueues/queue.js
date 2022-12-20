@@ -19,7 +19,6 @@ class Queue {
         if (this.length === 0) {
             this.first = newNode;
         } else {
-            if (this.first === null) this.first.next = newNode;
             this.last.next = newNode;
         }
         this.last = newNode;
@@ -45,7 +44,8 @@ const myQueue = new Queue();
 myQueue.enqueue("Miyabi");
 myQueue.enqueue("Omiya");
 myQueue.enqueue("Biii");
-console.log(myQueue.first.next);
+console.log(myQueue.peek());
+console.log(myQueue);
 
 //Joy
 //Matt
