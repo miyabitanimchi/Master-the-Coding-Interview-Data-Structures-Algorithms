@@ -4,3 +4,26 @@
 - The nodes can contain any type of information that we want
 
 === What is abstruct syntax tree? ===
+
+=== What are Binary Trees? ===
+- Each node can only have either zero, one or two nodes
+- Each child can only have one parent
+- Each node represents a certain state
+- The number of nodes on the last level is equal to the sum of the number og nodes
+  on all the other levels plus one
+
+=== Misc ===
+- Linked lista are also a type of trees
+- There are so many different kinds of trees
+- Perfect Binary Tree
+  - Everything is filled in
+  - All the leaf nodes are full (have 2 children)
+  - Perfect binary trees are very efficient and desiable
+- Full Binary Tree
+  - Each node has eitehr zero or two children but not one child
+
+=== Big O of Binary Trees ===
+- lookup: O(log N)
+- insert: O(log N)
+- delete: O(log N)
+
