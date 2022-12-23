@@ -1,0 +1,6 @@
+=== What are trees? ===
+- Trees are a data structure that have a hierarchical structures 
+  as opposed to linked lists and arrays which are liner
+- The nodes can contain any type of information that we want
+
+=== What is abstruct syntax tree? ===
