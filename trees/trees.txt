@@ -11,10 +11,6 @@
 - Each node represents a certain state
 - The number of nodes on the last level is equal to the sum of the number og nodes
   on all the other levels plus one
-
-=== Misc ===
-- Linked lista are also a type of trees
-- There are so many different kinds of trees
 - Perfect Binary Tree
   - Everything is filled in
   - All the leaf nodes are full (have 2 children)
@@ -22,8 +18,29 @@
 - Full Binary Tree
   - Each node has eitehr zero or two children but not one child
 
+=== Misc ===
+- Linked lista are also a type of trees
+- There are so many different kinds of trees
+- Devide and Conquer
+
 === Big O of Binary Trees ===
 - lookup: O(log N)
 - insert: O(log N)
 - delete: O(log N)
+
+=== How to calculate the number of nodes in a binary tree? ===
+- Do 2 to the power of the level
+- level 0: 2^0 = 1
+- level 1: 2^1 = 2
+- level 2: 2^2 = 4
+- level 3: 2^3 = 8
+
+# of nodes = 2^h - 1;
+log nodes = steps
+
+log 100 = 2
+10^2 = 100;
+
+=== What is O(logN)? ===
+- 処理するたびにターゲットが絞られて速くなる魔法のようなオーダー
 
