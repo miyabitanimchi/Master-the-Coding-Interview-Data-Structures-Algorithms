@@ -139,28 +139,30 @@ class LinkedList {
     return currentNode;
   }
 
-  reverse() { // if it's [1, 10, 5, 16]
+  reverse() {
+    // if it's [1, 10, 5, 16]
     if (!this.head.next) {
       return this.head;
     }
     let first = this.head; // 1
-    console.log("first: " + first);
+    // console.log("first: " + first.value);
     this.tail = this.head; // 1, but this.head.next still points to 10
-    console.log("this.tail: " + this.tail.next.value);
+    // console.log("this.tail: " + this.tail.value);
 
     let second = first.next; // 10
-    console.log("second: " + second);
+    // console.log("second: " + second.value);
 
-    while(second) {
-      const temp = second.next; // 10
-      console.log("temp: " + temp);
-      second.next = first; // 5 => 1
-      console.log("second.next: " + second.next);
+    while (second) {
+      const temp = second.next; // 5
+      // console.log("temp in while loop: " + temp?.value);
+      // console.log("1. second.next in while loop: " + second.next?.value);
+      second.next = first; // 5 => 1. 10 was pointing 5, but now pointing to 1
+      // console.log("2. second.next in while loop: " + second.next.value);
       first = second; // 10
-      console.log("first in while loop: " + first);
-      second = temp; // 10?
-      console.log("second in while loop: " + second);
-
+      console.log("first in while loop: " + first.value);
+      second = temp; // 5
+      console.log("second in while loop: " + second?.value);
+      console.log("first: " + first?.value + " " + "second: " + second?.value);
     }
     this.head.next = null;
     this.head = first;
@@ -183,5 +185,3 @@ console.log(myLinkedList.printList());
 // console.log(myLinkedList.length);
 myLinkedList.reverse();
 console.log(myLinkedList.printList());
-
-
