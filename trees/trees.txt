@@ -44,3 +44,10 @@ log 100 = 2
 === What is O(logN)? ===
 - 処理するたびにターゲットが絞られて速くなる魔法のようなオーダー
 
+=== What are Binary Search Trees? ===
+- they are good at searching
+- they allow us to preserve relationships (parents and children, which node...)
+- The rules of binary search Tree
+  - 1. All child nodes in the tree to the right of the root node must be greater than the current node. if left it decreases
+  - 2. Each node can only have up to two children because it's a binary tree
+
