@@ -24,9 +24,9 @@
 - Devide and Conquer
 
 === Big O of Binary Trees ===
-- lookup: O(log N)
-- insert: O(log N)
-- delete: O(log N)
+- lookup: O(log N) (If unbalanced binary tree... O(n))
+- insert: O(log N) (O(n))
+- delete: O(log N) (O(n))
 
 === How to calculate the number of nodes in a binary tree? ===
 - Do 2 to the power of the level
@@ -50,4 +50,8 @@ log 100 = 2
 - The rules of binary search Tree
   - 1. All child nodes in the tree to the right of the root node must be greater than the current node. if left it decreases
   - 2. Each node can only have up to two children because it's a binary tree
+
+=== Why is unbalanced binary tree bad? ===
+- it'll be O(log n) to O(n) (linear time)
+- It will need to loop through every node to insert, lookup and delete
 
