@@ -55,3 +55,13 @@ log 100 = 2
 - it'll be O(log n) to O(n) (linear time)
 - It will need to loop through every node to insert, lookup and delete
 
+=== Pros and cons of Binary Search tree ===
+- Pros
+  - Better than O(n)
+  - Ordered
+  - Flexible Size... Because we can place the node anywhere in the memory
+  - compared to hash tables? Data with binary search tree is sorted
+- cons
+  - No O(1) operations
+  - BST is not the fastest for anything
+
