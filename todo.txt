@@ -1,1 +1,2 @@
 x (B) 0000-00-00 2022-12-18 Review the reverse() method in linkedLists.js
+ (E) 0000-00-00 2022-12-31 Understand remove() method in BST
