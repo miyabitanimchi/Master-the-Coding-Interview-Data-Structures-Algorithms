@@ -59,7 +59,39 @@ class BinarySearchTree {
     return false;
   }
 
-  remove() {}
+  // remove(value) {
+  //   if (!this.root) return false;
+
+  //   let currentNode = this.root;
+  //   let parentNode = null;
+  //   while (currentNode) {
+  //     if (value < currentNode.value) {
+  //       parentNode = currentNode;
+  //       currentNode = currentNode.left;
+  //     } else if (value > currentNode.value) {
+  //       parentNode = currentNode;
+  //       currentNode = currentNode.right;
+  //     } else if (currentNode.value === value) {
+  //       // there will be 3 options
+  //       // 1. when the current node has no right child
+  //       if (currentNode.right === null) {
+  //         if (parentNode === null) {
+  //           this.root = currentNode.left;
+  //         }
+  //       } else {
+  //         // 2. Right child which doesn't have a left child
+  //         if (currentNode.right.left === null) {
+  //           if (parentNode === null) {
+  //             this.root = currentNode.left;
+  //           } else {
+  //             currentNode.right.left = currentNode.left;
+  //           }
+  //         }
+  //         // 3. Right child which has a left child
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 const traverse = (node) => {
