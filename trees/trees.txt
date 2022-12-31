@@ -70,3 +70,11 @@ log 100 = 2
   - Balanced binary search trees are suitable to maintain O(log N) search time, otherwise it will be lenear (O(n))
   - What's AVT? Named after the inventors, Adelson-Velskii and Landis.
 
+=== Binary Heap?? ===
+  - It's good at doing comparative operaitons 
+  - There are tqwo types, max heap and min heap
+    - Max heap: parent node >= child node
+    - Min heap: parent node <= child node
+  - The left node doesn't have to be smaller than the right node, it doesn't matter
+  - Binary heap is a type of data structure, it's nothing to do with memory heap
+
