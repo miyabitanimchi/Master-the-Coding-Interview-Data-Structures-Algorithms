@@ -65,3 +65,8 @@ log 100 = 2
   - No O(1) operations
   - BST is not the fastest for anything
 
+=== AVL Trees & Red / Black Trees ===
+  - These two are usually the most popular for balancing binary search trees
+  - Balanced binary search trees are suitable to maintain O(log N) search time, otherwise it will be lenear (O(n))
+  - What's AVT? Named after the inventors, Adelson-Velskii and Landis.
+
