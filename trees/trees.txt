@@ -91,3 +91,10 @@ log 100 = 2
   - Cons
     - Slow lookup
 
+=== Trie?? ===
+  - It's a specialized tree used in searching
+  - Most often with text
+  - It allows you to know if a word or part of a word exists in a body of text
+  - Each node can have many children
+  - Good for space complexity as well
+
