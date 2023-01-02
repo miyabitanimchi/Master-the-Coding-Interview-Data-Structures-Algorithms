@@ -77,4 +77,17 @@ log 100 = 2
     - Min heap: parent node <= child node
   - The left node doesn't have to be smaller than the right node, it doesn't matter
   - Binary heap is a type of data structure, it's nothing to do with memory heap
+  - You want to use it for example when you want to find a max and minimum if it's a min heap
+
+=== Priority Queue? ===
+  - Priority queue is a type of data that each element has a priority
+
+=== Pros and Cons of Binary Heaps ===
+  - Pros
+    - Better than O(n)
+    - Priority
+    - Flexible Size
+    - Fast insert
+  - Cons
+    - Slow lookup
 
