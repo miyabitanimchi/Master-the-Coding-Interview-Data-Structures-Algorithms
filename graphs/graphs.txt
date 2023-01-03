@@ -4,3 +4,11 @@
 - Each item is called a node or a vertex
 - Each node is connected with each other with edges
 - Trees are types of graph
+
+=== Types of Graphs
+- Directed (One way) and Undirected Graphs
+  - FB... Undirected, Twitter... Directed
+- Weighted and Unweighted Graphs
+ - Edges can also have information, and it's a weighted graph
+- Cyclic and Acyclic
+
