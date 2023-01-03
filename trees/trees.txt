@@ -2,6 +2,7 @@
 - Trees are a data structure that have a hierarchical structures 
   as opposed to linked lists and arrays which are liner
 - The nodes can contain any type of information that we want
+- Trees are types of graph
 
 === What is abstruct syntax tree? ===
 

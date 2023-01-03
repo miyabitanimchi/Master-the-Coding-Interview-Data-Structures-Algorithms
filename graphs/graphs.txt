@@ -1,0 +1,6 @@
+=== Graphs ===
+- One of the most usuful and used data structures in computer science when it comes to modeling real life
+- It's a connection with diffenrent nodes
+- Each item is called a node or a vertex
+- Each node is connected with each other with edges
+- Trees are types of graph
