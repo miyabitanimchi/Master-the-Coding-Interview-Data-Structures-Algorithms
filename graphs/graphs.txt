@@ -15,3 +15,7 @@
 === Directed Acyclic Graph ===
 - commonly called DAG
 - Iota, which is a popular blockchain project uses the graph
+
+=== Pro and Con of Graphs ===
+- Pro... Relationships
+- Con... Scaling is hard
