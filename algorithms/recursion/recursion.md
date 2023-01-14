@@ -17,7 +17,7 @@ function inception() {
 ### Rules to create recursive functions
 
 1. Identify the base case
-2. identify the recursive case
+2. Identify the recursive case
 3. Get closer and closer and return when needed. Usually you have 2 returns
 
 ### In the case below, we'll get `undefined`. Why?
