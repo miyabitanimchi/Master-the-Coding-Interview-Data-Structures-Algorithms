@@ -15,3 +15,15 @@ const findFactorialIterative = (number) => {
   return factorial;
 };
 console.log(findFactorialIterative(5));
+console.log(findFactorialIterative(3));
+
+// andrei's solution
+const findFactorialIterative2 = (number) => {
+  let answer = 1;
+  for (let i = 2; i <= number; i++) {
+    answer *= i;
+  }
+  return answer;
+};
+
+console.log(findFactorialIterative2(2));
