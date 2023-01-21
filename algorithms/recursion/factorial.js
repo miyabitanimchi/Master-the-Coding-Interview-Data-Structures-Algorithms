@@ -1,3 +1,4 @@
+// O(n)
 const findFactorialRecursive = (number) => {
   if (number === 1) {
     return 1; // base case
@@ -17,7 +18,7 @@ const findFactorialIterative = (number) => {
 console.log(findFactorialIterative(5));
 console.log(findFactorialIterative(3));
 
-// andrei's solution
+// andrei's solution O(n)
 const findFactorialIterative2 = (number) => {
   let answer = 1;
   for (let i = 2; i <= number; i++) {
