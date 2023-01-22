@@ -85,8 +85,9 @@ Divide and conqur using recursion
 - Divided into a number of subproblems that are smaller instances of the same problem
 - Each instance of the subproblem is identical in nature
 - The solutions of each subproblem can be conbined to solve problem at hand
+- for merge sort, quick sort, tree traversal, graph traversal recursion can be used
 
 ### Note
 
 - A problem that can be solved with recuesion can usually be solved iteratively as well
-- Time complexity is often expensive
+- Time complexity and space complexity are often expensive
