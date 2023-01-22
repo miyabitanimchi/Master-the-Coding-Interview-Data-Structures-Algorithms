@@ -77,6 +77,15 @@ function inception() {
 console.log(inception());
 ```
 
+### When to use recursion?
+
+Every time we are using a tree or converting something into a tree, consider recursion <br/>
+Divide and conqur using recursion
+
+- Divided into a number of subproblems that are smaller instances of the same problem
+- Each instance of the subproblem is identical in nature
+- The solutions of each subproblem can be conbined to solve problem at hand
+
 ### Note
 
 - A problem that can be solved with recuesion can usually be solved iteratively as well
