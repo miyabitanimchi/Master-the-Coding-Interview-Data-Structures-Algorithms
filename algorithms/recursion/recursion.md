@@ -20,6 +20,18 @@ function inception() {
 2. Identify the recursive case
 3. Get closer and closer and return when needed. Usually you have 2 returns
 
+### Pros and Cons of Recursion
+
+- Pros
+  - Dry
+  - Readability
+- Cons
+  - Large Stack
+
+### Tail Call Optimization
+
+- In JS with ES6, it allows recursion to be called without increasing the call stack
+
 ### In the case below, we'll get `undefined`. Why?
 
 ```
@@ -64,3 +76,8 @@ function inception() {
 
 console.log(inception());
 ```
+
+### Note
+
+- A problem that can be solved with recuesion can usually be solved iteratively as well
+- Time complexity is often expensive
